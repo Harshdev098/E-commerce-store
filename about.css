@@ -1,0 +1,130 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Libre+Franklin:wght@200&family=Merriweather:wght@300&family=Mukta:wght@200&family=Mulish:wght@200&family=Poppins:ital,wght@1,100&family=Roboto+Mono:ital,wght@1,100&family=Roboto:ital,wght@1,300&display=swap');
+</style>
+body{
+	margin:0px;
+	background-color:#dee1de;
+}
+header{
+	background:url('https://preview.colorlib.com/theme/cozastore/images/bg-01.jpg.webp') no-repeat center center/cover;
+	width:100%;
+}
+.navbar2{
+	background-color:transparent;
+}
+.navbar2 ul{
+	overflow:auto;
+	margin:0px;
+}
+.navbar2 li{
+	list-style:none;
+	float:left;
+	padding:20px;
+	font-size:20px;
+}
+.navbar2 li a{
+	text-decoration:none;
+	color:white;
+}
+.navbar2 li a:hover{
+	color:red;
+}
+
+header h1{
+	font-size:60px;
+	padding:40px 10px 80px 10px;
+	text-align:center;
+	color:white;
+	word-break: break-all;
+}
+.section{
+	display:flex;
+	padding:30px;
+}
+.content p{
+	font-family: 'Courgette', cursive;
+font-family: 'Libre Franklin', sans-serif;
+font-family: 'Merriweather', serif;
+font-family: 'Mukta', sans-serif;
+font-family: 'Mulish', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Mono', monospace;
+font-size:21x;
+}
+@media(max-width:950px){
+	.section{
+		display:flex;
+		flex-direction:column;
+	}
+	.content {
+		display:flex;
+	}
+	.image-content{
+        max-width:100%;
+	    height:auto;
+    }
+    .section img{
+	    width:100%;
+	    height:auto;
+    }
+}
+@media(max-width:600px){
+	.navbar2{
+	background-color:#595e5e;
+	}
+}
+.content{
+	padding-right:40px;
+	font-size:17px;
+}
+.terms{
+    background-color:#535362;
+	box-sizing:border-box;
+	display:grid;
+	grid-template-columns:1fr 1fr 1fr;
+	grid-gap:1rem;
+	grid-template-columns:repeat(auto-fill,minmax(100px,0.5fr));
+	grid-column-gap:10rem;
+	grid-row-gap:4rem;
+}
+#term1{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+}
+#term1 a{
+	display:block;
+	color:white;
+	padding:15px 0px 15px 25px;
+	text-decoration:none;
+	font-size:18px;
+}
+
+#term2{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+}
+#term2 a{
+	display:block;
+	font-size:18px;
+	padding:15px 0px 15px 25px;
+	color:white;
+	text-decoration:none;
+}
+#term3{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+}
+#term3 a{
+	display:block;
+	font-size:18px;
+	padding:15px 24px 29px 13px;
+	color:white;
+	text-decoration:none;
+}

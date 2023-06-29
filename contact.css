@@ -1,0 +1,156 @@
+
+body{
+	margin:0px;
+	background-color:#dee1de;
+}
+header{
+	background:url('https://preview.colorlib.com/theme/cozastore/images/bg-01.jpg.webp') no-repeat center center/cover;
+	width:100%;
+}
+.navbar2{
+	background-color:transparent;
+}
+.navbar2 ul{
+	overflow:auto;
+	margin:0px;
+}
+.navbar2 li{
+	list-style:none;
+	float:left;
+	padding:20px;
+	font-size:20px;
+}
+.navbar2 li a{
+	text-decoration:none;
+	color:white;
+}
+.navbar2 li a:hover{
+	color:red;
+}
+header h1{
+	font-size:60px;
+	padding:40px 10px 80px 10px;
+	text-align:center;
+	color:white;
+	white-space:auto;
+	overflow-wrap:break-word;
+}
+@media(max-width:600px){
+	.navbar2{
+	background-color:#595e5e;
+	}
+}
+.contact{
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	align-items:center;
+	flex-wrap:wrap;
+	margin:30px;
+	background-color: rgb(190, 184, 184);
+	border-radius: 12px;
+}
+.input{
+	height:auto;
+	display:flex;
+	flex-direction:column;
+	margin: 25px 40px;
+    overflow: hidden;
+}
+@media(max-width:270px){
+	.contact{
+		margin:7px
+	}
+	.input{
+		margin:25px 3px;
+	}
+}
+.input input{
+	padding:10px;
+	margin:10px;
+	height:auto;
+	width:300px;
+}
+.input textarea{
+	padding:10px;
+	margin:10px;
+	height:auto;
+}
+.btn{
+	margin:18px 0px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	
+}
+.btn button{
+	background-color:#160f0f;
+	padding:14px 40px;
+	color:white;
+	font-size:18px;
+	border-radius:30px;
+}
+.btn button:hover{
+	background-color:#ff5555;
+	color:black;
+}
+@media(max-width:400px){
+	.image{
+		max-width:100%;
+		height:auto;
+	}
+	.image img{
+		width:100%;
+		height:auto;
+	}
+}
+.terms{
+    background-color:#535362;
+	box-sizing:border-box;
+	display:grid;
+	grid-template-columns:1fr 1fr 1fr;
+	grid-gap:1rem;
+	grid-template-columns:repeat(auto-fill,minmax(100px,0.5fr));
+	grid-column-gap:10rem;
+	grid-row-gap:4rem;
+}
+#term1{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+}
+#term1 a{
+	display:block;
+	color:white;
+	padding:15px 0px 15px 25px;
+	text-decoration:none;
+	font-size:18px;
+}
+
+#term2{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+}
+#term2 a{
+	display:block;
+	font-size:18px;
+	padding:15px 0px 15px 25px;
+	color:white;
+	text-decoration:none;
+}
+#term3{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+}
+#term3 a{
+	display:block;
+	font-size:18px;
+	padding:15px 24px 29px 13px;
+	color:white;
+	text-decoration:none;
+}

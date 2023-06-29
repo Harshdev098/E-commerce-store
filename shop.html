@@ -1,0 +1,86 @@
+<!Doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width,initial-scale=1.0">
+				<meta http-equiv="X-UA-Compatible" content="ie=edge">
+					<title>Shop with Us</title>
+					<script src="https://kit.fontawesome.com/4a3b1f73a2.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <!-- slider links -->
+    <!-- <script src="http://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> -->
+    <script src="js/jQuery3.4.1.js"></script>
+    <link rel="stylesheet" href="shop-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-img">
+          <img src="./index-image.jpg.png" width="160px">
+        </div>
+        <div class="navbar-menu">
+          <ul>
+            <li id="nav-hide">
+              <a href="">FAQs</a>
+            </li>
+            <li>
+              <a href="./admin-dashboard.html">Admin</a>
+            </li>
+            <li>
+              <a href="./choose-file.html">Login</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+			<!-- HEADER -->
+			<div id="1"></div>
+			<script>
+				load("header.html");
+				function load(url)
+				{
+					req = new XMLHttpRequest();
+					req.open("GET", url, false);
+					req.send(null);
+					document.getElementById(1).innerHTML = req.responseText;
+				}
+			</script>
+			<div id="3"></div>
+    <script>
+        load("content.html");
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(3).innerHTML = req.responseText;
+        }
+    </script>
+			<div class="mycart-button">
+			<button class="btn"><a href="./cart.html">Go to My Cart</a></button>
+			</div>
+			<div class="terms">
+		    <div id="term1">
+		    <a href="">About</a>
+		    <a href="">Contact Us</a>
+		    <a href="">Services</a>
+		    <a href="">Privacy</a>
+		    </div>
+		    <div id="term2">
+		    <a href="">FAQs</a>
+		    <a href="">Return Policy</a>
+		    <a href="">Security</a>
+			<a href="">Terma of Use</a>
+		    </div>
+			<div id="term3">
+			<a href="">Cnacellation</a>
+		    <a href="">Payments</a>
+		    <a href="">Shipping</a>
+			<a href=""></a>
+			</div>
+		    </div>
+			<!-- content JS -->
+<script src="content.js"></script>
+		</body>
+	</html>
